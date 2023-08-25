@@ -2,7 +2,7 @@
 
 import React, { useRef } from "react";
 import Image from "next/image";
-import logo from "../../../public/logo.png";
+import logo from "../../../public/sinfon orange.png";
 import Button from "../Button/Button";
 import styled from "styled-components";
 import { FaRocket, FaWallet } from "react-icons/fa";
@@ -33,48 +33,57 @@ function Header() {
     <HeaderStyled ref={hero}>
       <nav>
         <div className="logo">
-          <Image src={logo} alt="logo" width={36} />
-          <h2>Logo</h2>
+          <Image src={logo} alt="logo" width={100} />
         </div>
-        <div className="input">
+        {/* <div className="input">
           <input type="text" placeholder="Search" />
-        </div>
+        </div> */}
         <ul className="nav-items">
           <li>
             <a href="#">Home</a>
           </li>
           <li>
-            <a href="#">Auctions</a>
+            <a href="#">Quienes somos</a>
           </li>
           <li>
-            <a href="#">Marketplace</a>
+            <a href="#">Servicios</a>
           </li>
           <li>
-            <a href="#">About</a>
+            <a href="#">Portfolio</a>
           </li>
-          <Button name="Connect Wallet" icon={<FaWallet />} />
+          <li>
+            <a href="#">Consejos</a>
+          </li>
+          <li>
+            <a href="#">Contacto</a>
+          </li>
+          <li style={{ textAlign: "center" }}>
+            <a href="#">EN</a>
+            <br />v
+          </li>
+          {/* <Button name="" icon={<FaWallet />} /> */}
         </ul>
       </nav>
       <div className="header-content">
         <div className="text-content">
           <h1 className={abril.className}>
-            Buy, collect, and sell extraordinary NFTs
+            Desarrollamos software para impulsar tu negocio al próximo nivel
           </h1>
           <p>
-            Acquire expertise in navigating the rapidly evolving and
-            exhilarating NFT landscape, unveil the highly sought-after NFTs, and
-            comprehend the possible advantages and disadvantages of acquiring,
-            amassing, and vending these exceptional digital assets.
+            Nuestro enfoque se centra en ti y en tus objetivos. Si tienes un
+            negocio o un proyecto que necesitas llevar al mundo digital, estamos
+            aquí para convertir esa visión en una realidad atractiva y
+            funcional.
           </p>
           <div className="buttons">
             <Button
-              name="Get Started"
+              name="Comencemos!"
               background="#f2994a"
               color="#fff"
               border="1px solid #f2994a"
               icon={<FaRocket />}
             />
-            <Button name="Learn More" />
+            <Button name="Visita el Portafolio" />
           </div>
         </div>
         <div className="image-content" style={{ transform: "scale(1)" }}>
@@ -86,59 +95,9 @@ function Header() {
               }}
             >
               <Image
-                src="/images/monkey.png"
-                width={200}
-                height={200}
-                alt="hero"
-                style={{
-                  transform: imageHover.transform,
-                }}
-              />
-            </div>
-            <div
-              className="image"
-              style={{
-                transform: hoverHero.transform,
-              }}
-            >
-              <Image
-                src="/images/monkey.png"
-                width={200}
-                height={200}
-                alt="hero"
-                style={{
-                  transform: imageHover.transform,
-                }}
-              />
-            </div>
-          </div>
-          <div style={{ display: "flex" }}>
-            <div
-              className="image"
-              style={{
-                transform: hoverHero.transform,
-              }}
-            >
-              <Image
-                src="/images/monkey.png"
-                width={200}
-                height={200}
-                alt="hero"
-                style={{
-                  transform: imageHover.transform,
-                }}
-              />
-            </div>
-            <div
-              className="image"
-              style={{
-                transform: hoverHero.transform,
-              }}
-            >
-              <Image
-                src="/images/monkey.png"
-                width={200}
-                height={200}
+                src="/images/lady.jpg"
+                width={400}
+                height={400}
                 alt="hero"
                 style={{
                   transform: imageHover.transform,
@@ -209,7 +168,7 @@ const HeaderStyled = styled.header`
 
     .text-content {
       > h1 {
-        font-size: clamp(2rem, 5vw, 5rem);
+        font-size: clamp(1rem, 5vw, 3rem);
         color: #f2994a;
         transition: all 0.01s linear;
         padding-bottom: 1.5rem;
