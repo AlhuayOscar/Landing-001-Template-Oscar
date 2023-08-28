@@ -1,72 +1,60 @@
 const footer = [
   {
-    title: "My Account",
+    title: "Secciones",
     links: [
       {
-        name: "Profile",
-        link: "/profile",
+        name: "Inicio",
+        link: "/Inicio",
       },
       {
-        name: "Settings",
-        link: "/settings",
+        name: "Quienes Somos",
+        link: "/QuienesSomos",
       },
       {
-        name: "Logout",
-        link: "/logout",
+        name: "Portafolio",
+        link: "/Portafolio",
       },
       {
-        name: "Help",
-        link: "/help",
+        name: "Preguntas Frecuentes",
+        link: "/faq",
       },
     ],
   },
   {
-    title: "Resources",
+    title: "Servicios",
     links: [
       {
-        name: "Help Center",
-        link: "/help",
+        name: "Landing Page",
+        link: "/LandingPage",
       },
       {
-        name: "My Activities",
-        link: "/activities",
+        name: "E-commerce",
+        link: "/Ecommerce",
       },
       {
-        name: "Collections",
-        link: "/collections",
+        name: "Turismo",
+        link: "/Turismo",
       },
       {
-        name: "My Collaborations",
-        link: "/collaborations",
+        name: "Paginas Web Económicas",
+        link: "/Economicas",
+      },
+      {
+        name: "Consejos",
+        link: "/Consejos",
       },
     ],
   },
   {
-    title: "Useful Links",
+    title: "Contacto",
     links: [
       {
-        name: "All NFTs",
-        link: "/nfts",
+        name: "(+54) 3487-477269",
+        link: "/telefono",
       },
       {
-        name: "How to Sell",
-        link: "/sell",
-      },
-      {
-        name: "Create",
-        link: "/create",
-      },
-      {
-        name: "Explore",
-        link: "/explore",
-      },
-      {
-        name: "Marketplace",
-        link: "/marketplace",
-      },
-      {
-        name: "Privacy & Policy",
-        link: "/privacy",
+        name: "connecttopeopledigital@gmail.com",
+        link: "/email ",
       },
     ],
   },

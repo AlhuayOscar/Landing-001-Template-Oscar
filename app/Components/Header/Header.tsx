@@ -40,7 +40,7 @@ function Header() {
         </div> */}
         <ul className="nav-items">
           <li>
-            <a href="#">Home</a>
+            <a href="#">Inicio</a>
           </li>
           <li>
             <a href="#">Quienes somos</a>
@@ -58,8 +58,7 @@ function Header() {
             <a href="#">Contacto</a>
           </li>
           <li style={{ textAlign: "center" }}>
-            <a href="#">EN</a>
-            <br />v
+            <a href="#">EN v</a>
           </li>
           {/* <Button name="" icon={<FaWallet />} /> */}
         </ul>
@@ -75,7 +74,7 @@ function Header() {
             aquí para convertir esa visión en una realidad atractiva y
             funcional.
           </p>
-          <div className="buttons">
+          {/* <div className="buttons">
             <Button
               name="Comencemos!"
               background="#f2994a"
@@ -84,7 +83,7 @@ function Header() {
               icon={<FaRocket />}
             />
             <Button name="Visita el Portafolio" />
-          </div>
+          </div> */}
         </div>
         <div className="image-content" style={{ transform: "scale(1)" }}>
           <div style={{ display: "flex" }}>
@@ -117,7 +116,7 @@ const HeaderStyled = styled.header`
     min-height: 10vh;
     border-bottom: 1px solid var(--color-border);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     .logo {
       display: flex;
@@ -159,7 +158,7 @@ const HeaderStyled = styled.header`
   }
 
   .header-content {
-    padding: 0 10rem 5rem 10rem;
+    padding: 2rem 10rem 5rem 10rem;
     display: flex;
     justify-content: space-between;
     align-items: center;

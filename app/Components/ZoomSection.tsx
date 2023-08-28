@@ -31,7 +31,7 @@ function ZoomSection() {
       <div
         className="image"
         style={{
-          height: "50rem",
+          height: "40rem",
           width: "100%",
         }}
       >
