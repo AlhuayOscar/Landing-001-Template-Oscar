@@ -186,10 +186,17 @@ const HeaderStyled = styled.header`
       border-radius: 8px;
       background-color: var(--color-bg);
       border: 1px solid var(--color-border);
+      transition: 0.2s; /* Transición general de 0.4 segundos */
+      cursor: pointer;
+    }
 
-      img {
-        border-radius: 8px;
-      }
+    .image-content .image img {
+      border-radius: 8px;
+    }
+
+    .image-content .image:hover {
+      transform: scale(1.05); /* Cambio en la escala al hacer hover */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra al hacer hover */
     }
   }
 `;
