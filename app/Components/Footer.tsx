@@ -28,8 +28,9 @@ function Footer() {
           </div>
           <p>
             Contamos con los mejores programadores para desarrollar el software
-            que necesitas. Empresa o negocio de cualquier giro podemos ayudarte
-            a sistematizar tus procesos.
+            que necesitas, de Empresa o Negocio de cualquier tipo. <br />
+            <br />
+            Podemos ayudarte a sistematizar tus procesos.
           </p>
           <div className="socials">
             <AiFillGithub />

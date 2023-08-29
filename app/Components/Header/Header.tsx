@@ -66,7 +66,8 @@ function Header() {
       <div className="header-content">
         <div className="text-content">
           <h1 className={abril.className}>
-            Desarrollamos software para impulsar tu negocio al próximo nivel
+            Desarrollamos software para impulsar tu negocio al
+            <span> próximo nivel</span>
           </h1>
           <p>
             Nuestro enfoque se centra en ti y en tus objetivos. Si tienes un
@@ -94,7 +95,7 @@ function Header() {
               }}
             >
               <Image
-                src="/images/lady.jpg"
+                src="/images/ctoplady.jpg"
                 width={400}
                 height={400}
                 alt="hero"
@@ -158,25 +159,39 @@ const HeaderStyled = styled.header`
   }
 
   .header-content {
+    position: static; /* Cambiamos la posición a estática */
+    background-image: url("mancha3.png");
+    background-repeat: no-repeat;
+    background-size: auto; /* Deja que las imágenes se ajusten automáticamente */
+    background-attachment: fixed;
     padding: 2rem 10rem 5rem 10rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 4rem;
     min-height: calc(100vh - 10vh);
-
     .text-content {
       > h1 {
         font-size: clamp(1rem, 5vw, 3rem);
         color: #f2994a;
         transition: all 0.01s linear;
         padding-bottom: 1.5rem;
+        font-family: "Alfa Slab One";
+        font-weight: 600;
       }
 
       .buttons {
         display: flex;
         gap: 1rem;
         margin-top: 2.5rem;
+      }
+    }
+    .text-content {
+      > h1 > span {
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        font-size: 90%;
       }
     }
 
