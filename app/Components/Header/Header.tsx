@@ -2,7 +2,7 @@
 
 import React, { useRef } from "react";
 import Image from "next/image";
-import logo from "../../../public/logo.png";
+import logo from "../../../public/sinfon orange.png";
 import Button from "../Button/Button";
 import styled from "styled-components";
 import { FaRocket, FaWallet } from "react-icons/fa";
@@ -33,49 +33,58 @@ function Header() {
     <HeaderStyled ref={hero}>
       <nav>
         <div className="logo">
-          <Image src={logo} alt="logo" width={36} />
-          <h2>Logo</h2>
+          <Image src={logo} alt="logo" width={100} />
         </div>
-        <div className="input">
+        {/* <div className="input">
           <input type="text" placeholder="Search" />
-        </div>
+        </div> */}
         <ul className="nav-items">
           <li>
-            <a href="#">Home</a>
+            <a href="#">Inicio</a>
           </li>
           <li>
-            <a href="#">Auctions</a>
+            <a href="#">Quienes somos</a>
           </li>
           <li>
-            <a href="#">Marketplace</a>
+            <a href="#">Servicios</a>
           </li>
           <li>
-            <a href="#">About</a>
+            <a href="#">Portfolio</a>
           </li>
-          <Button name="Connect Wallet" icon={<FaWallet />} />
+          <li>
+            <a href="#">Consejos</a>
+          </li>
+          <li>
+            <a href="#">Contacto</a>
+          </li>
+          <li style={{ textAlign: "center" }}>
+            <a href="#">EN v</a>
+          </li>
+          {/* <Button name="" icon={<FaWallet />} /> */}
         </ul>
       </nav>
       <div className="header-content">
         <div className="text-content">
           <h1 className={abril.className}>
-            Buy, collect, and sell extraordinary NFTs
+            Desarrollamos software para impulsar tu negocio al
+            <span> próximo nivel</span>
           </h1>
           <p>
-            Acquire expertise in navigating the rapidly evolving and
-            exhilarating NFT landscape, unveil the highly sought-after NFTs, and
-            comprehend the possible advantages and disadvantages of acquiring,
-            amassing, and vending these exceptional digital assets.
+            Nuestro enfoque se centra en ti y en tus objetivos. Si tienes un
+            negocio o un proyecto que necesitas llevar al mundo digital, estamos
+            aquí para convertir esa visión en una realidad atractiva y
+            funcional.
           </p>
-          <div className="buttons">
+          {/* <div className="buttons">
             <Button
-              name="Get Started"
+              name="Comencemos!"
               background="#f2994a"
               color="#fff"
               border="1px solid #f2994a"
               icon={<FaRocket />}
             />
-            <Button name="Learn More" />
-          </div>
+            <Button name="Visita el Portafolio" />
+          </div> */}
         </div>
         <div className="image-content" style={{ transform: "scale(1)" }}>
           <div style={{ display: "flex" }}>
@@ -86,59 +95,9 @@ function Header() {
               }}
             >
               <Image
-                src="/images/monkey.png"
-                width={200}
-                height={200}
-                alt="hero"
-                style={{
-                  transform: imageHover.transform,
-                }}
-              />
-            </div>
-            <div
-              className="image"
-              style={{
-                transform: hoverHero.transform,
-              }}
-            >
-              <Image
-                src="/images/monkey.png"
-                width={200}
-                height={200}
-                alt="hero"
-                style={{
-                  transform: imageHover.transform,
-                }}
-              />
-            </div>
-          </div>
-          <div style={{ display: "flex" }}>
-            <div
-              className="image"
-              style={{
-                transform: hoverHero.transform,
-              }}
-            >
-              <Image
-                src="/images/monkey.png"
-                width={200}
-                height={200}
-                alt="hero"
-                style={{
-                  transform: imageHover.transform,
-                }}
-              />
-            </div>
-            <div
-              className="image"
-              style={{
-                transform: hoverHero.transform,
-              }}
-            >
-              <Image
-                src="/images/monkey.png"
-                width={200}
-                height={200}
+                src="/images/ctoplady.jpg"
+                width={400}
+                height={400}
                 alt="hero"
                 style={{
                   transform: imageHover.transform,
@@ -158,7 +117,7 @@ const HeaderStyled = styled.header`
     min-height: 10vh;
     border-bottom: 1px solid var(--color-border);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     .logo {
       display: flex;
@@ -200,19 +159,26 @@ const HeaderStyled = styled.header`
   }
 
   .header-content {
-    padding: 0 10rem 5rem 10rem;
+    position: static; /* Cambiamos la posición a estática */
+    background-image: url("HOME.png");
+    background-repeat: no-repeat;
+    background-size: auto; /* Deja que las imágenes se ajusten automáticamente */
+    background-attachment: static;
+    padding: 2rem 10rem 5rem 10rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 4rem;
     min-height: calc(100vh - 10vh);
-
     .text-content {
       > h1 {
-        font-size: clamp(2rem, 5vw, 5rem);
+        font-size: clamp(1rem, 5vw, 3rem);
         color: #f2994a;
         transition: all 0.01s linear;
         padding-bottom: 1.5rem;
+        padding-right: 7rem;
+        font-family: "Alfa Slab One";
+        font-weight: 600;
       }
 
       .buttons {
@@ -221,16 +187,31 @@ const HeaderStyled = styled.header`
         margin-top: 2.5rem;
       }
     }
+    .text-content {
+      > h1 > span {
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        font-size: 90%;
+      }
+    }
 
     .image-content .image {
       padding: 1rem;
       border-radius: 8px;
       background-color: var(--color-bg);
       border: 1px solid var(--color-border);
+      transition: 0.2s; /* Transición general de 0.4 segundos */
+      cursor: pointer;
+    }
 
-      img {
-        border-radius: 8px;
-      }
+    .image-content .image img {
+      border-radius: 8px;
+    }
+
+    .image-content .image:hover {
+      transform: scale(1.05); /* Cambio en la escala al hacer hover */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra al hacer hover */
     }
   }
 `;

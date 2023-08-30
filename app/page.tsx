@@ -68,6 +68,7 @@ export default function Home() {
         </SectionLayout>
 
         <SectionLayout>
+          <CenteredPar>Quienes somos?</CenteredPar>
           <TextSection />
         </SectionLayout>
 
@@ -80,20 +81,21 @@ export default function Home() {
               scale,
             }}
           >
-            <iframe
-              src="https://www.youtube.com/embed/OuaUjkZhfqQ"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            ></iframe>
+            <video controls width="100%" height="100%">
+              <source
+                src="https://res.cloudinary.com/decvhtmn2/video/upload/v1693247928/CtoP%20-%20001/PorqueSitioWeb_igirh6.mp4"
+                type="video/mp4"
+              />
+              Tu navegador no admite la reproducción de videos.
+            </video>
           </motion.div>
         </SectionLayout>
 
         <SectionLayout>
           <ZoomSection></ZoomSection>
         </SectionLayout>
-
         <SectionLayout>
+          <CenteredPar>Qué ofrecemos?</CenteredPar>
           <TextSection />
         </SectionLayout>
 
@@ -110,7 +112,7 @@ const MainStyled = styled.main`
   .cards {
     position: absolute;
     display: grid;
-    grid-template-columns: repeat(5, 30rem);
+    grid-template-columns: repeat(5, 34rem);
     gap: 4rem;
   }
 
@@ -124,4 +126,7 @@ const MainStyled = styled.main`
       height: 52rem;
     }
   }
+`;
+const CenteredPar = styled.p`
+  text-align: center;
 `;

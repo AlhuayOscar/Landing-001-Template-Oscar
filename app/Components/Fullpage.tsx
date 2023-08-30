@@ -33,7 +33,7 @@ function Fullpage() {
         }}
       >
         <Image
-          src="/images/rover.jpg"
+          src="/images/rovers.jpg"
           alt="monkey"
           fill={true}
           style={{
@@ -47,9 +47,10 @@ function Fullpage() {
 }
 
 const FullpageStyled = styled.div`
+  padding-block: 1rem;
   .image {
     width: calc(100% - 10rem);
-    height: 1000px;
+    height: 450px;
 
     position: relative;
     border-radius: 1rem;
@@ -57,6 +58,7 @@ const FullpageStyled = styled.div`
 
     border: 1px solid var(--color-border);
     transition: border 0.3s ease-in-out;
+    margin: auto;
 
     img {
       padding: 1.5rem;
