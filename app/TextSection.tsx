@@ -3,7 +3,7 @@
 import React from "react";
 import styled from "styled-components";
 import { motion, useScroll, useTransform } from "framer-motion";
-
+import RocketLaunchIcon from "@mui/icons-material/RocketLaunch";
 interface Props {
   children: React.ReactNode;
 }
@@ -16,8 +16,8 @@ const TextWrapper = ({ children }: Props) => {
     offset: ["start end", "end start"],
   });
 
-  const opacity = useTransform(scrollYProgress, [1, 0.8, 0], [1, 1, 0]);
-  const x = useTransform(scrollYProgress, [1, 0.4, 0], [0, 0, -1000]);
+  const opacity = useTransform(scrollYProgress, [1, 0.4, 0], [1, 1, 0]);
+  const x = useTransform(scrollYProgress, [1, 0.2, 0], [0, 0, -1000]);
   const colorChange = useTransform(
     scrollYProgress,
     [0, 0.2, 0.4, 0.6, 0.8, 1],
@@ -41,34 +41,21 @@ const TextWrapper = ({ children }: Props) => {
 function TextSection() {
   return (
     <TextSectionStyled>
-      <TextWrapper>
-        Lorem ipsum dolor, sit amet consectetur adipisicing.
-      </TextWrapper>
-      <TextWrapper>
-        Lorem ipsum dolor, sit amet consectetur adipisicing.
-      </TextWrapper>
-      <TextWrapper>
-        Lorem ipsum dolor, sit amet consectetur adipisicing.
-      </TextWrapper>
-      <TextWrapper>
-        Lorem ipsum dolor, sit amet consectetur adipisicing.
-      </TextWrapper>
-      <TextWrapper>
-        Lorem ipsum dolor, sit amet consectetur adipisicing.
-      </TextWrapper>
-      <TextWrapper>
-        Lorem ipsum dolor, sit amet consectetur adipisicing.
-      </TextWrapper>
-      <TextWrapper>
-        Lorem ipsum dolor, sit amet consectetur adipisicing.
-      </TextWrapper>
+      <TextWrapper>Landing Page.</TextWrapper>
+      <TextWrapper>Servicio de Ecommerce.</TextWrapper>
+      <TextWrapper>Recomendaciones Habituales. </TextWrapper>
+      <TextWrapper>Monetización y suscripciones. </TextWrapper>
+      <TextWrapper>Integración de Redes Sociales. </TextWrapper>
+      <TextWrapper>Paneles de administración. </TextWrapper>
+      <TextWrapper>Seguridad y Encriptación de datos. </TextWrapper>
     </TextSectionStyled>
   );
 }
 
 const TextSectionStyled = styled.section`
+
   p {
-    font-size: 5rem;
+    font-size: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;

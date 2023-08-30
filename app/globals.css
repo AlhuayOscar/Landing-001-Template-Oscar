@@ -15,7 +15,7 @@ body {
   position: relative;
   background-color: var(--color-bg);
   font-size: 1.2rem;
-  color: hsla(180, 7%, 75%, 0.9);
+  color: hsla(0, 0%, 100%, 0.9);
   overflow-x: hidden;
 }
 
@@ -34,4 +34,3 @@ header {
   position: relative;
   z-index: 10;
 }
-

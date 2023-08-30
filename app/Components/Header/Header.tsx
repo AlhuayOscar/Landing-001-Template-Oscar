@@ -160,10 +160,10 @@ const HeaderStyled = styled.header`
 
   .header-content {
     position: static; /* Cambiamos la posición a estática */
-    background-image: url("mancha3.png");
+    background-image: url("HOME.png");
     background-repeat: no-repeat;
     background-size: auto; /* Deja que las imágenes se ajusten automáticamente */
-    background-attachment: fixed;
+    background-attachment: static;
     padding: 2rem 10rem 5rem 10rem;
     display: flex;
     justify-content: space-between;
@@ -176,6 +176,7 @@ const HeaderStyled = styled.header`
         color: #f2994a;
         transition: all 0.01s linear;
         padding-bottom: 1.5rem;
+        padding-right: 7rem;
         font-family: "Alfa Slab One";
         font-weight: 600;
       }

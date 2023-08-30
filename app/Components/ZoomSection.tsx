@@ -52,13 +52,13 @@ function ZoomSection() {
         />
 
         <Image
-          src="/images/arm2.jpg"
+          src="/images/Blog3.png"
           alt="bulb tree"
           className="monkey"
           width={500}
           height={500}
           style={{
-            objectFit: "cover",
+            objectFit: "contain",
             objectPosition: "50% 0%",
             transform: hover2.transform,
             transition: hover2.transition,
@@ -66,13 +66,13 @@ function ZoomSection() {
         />
 
         <Image
-          src="/images/arm.jpg"
+          src="/images/Blog2.png"
           alt="bulb tree"
           className="smoke"
           width={500}
           height={500}
           style={{
-            objectFit: "cover",
+            objectFit: "contain",
             objectPosition: "center",
             transform: hover3.transform,
             transition: hover3.transition,

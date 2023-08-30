@@ -68,6 +68,7 @@ export default function Home() {
         </SectionLayout>
 
         <SectionLayout>
+          <CenteredPar>Quienes somos?</CenteredPar>
           <TextSection />
         </SectionLayout>
 
@@ -93,8 +94,8 @@ export default function Home() {
         <SectionLayout>
           <ZoomSection></ZoomSection>
         </SectionLayout>
-
         <SectionLayout>
+          <CenteredPar>Qué ofrecemos?</CenteredPar>
           <TextSection />
         </SectionLayout>
 
@@ -125,4 +126,7 @@ const MainStyled = styled.main`
       height: 52rem;
     }
   }
+`;
+const CenteredPar = styled.p`
+  text-align: center;
 `;

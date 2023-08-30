@@ -20,7 +20,7 @@ function Footer() {
       <nav>
         <div className="logo-con">
           <div className="logo">
-            <Image src={logo} width={125} alt="logo" />
+            <Image src={logo} width={205} alt="logo" />
           </div>
           <div className="input">
             <input type="text" placeholder="Subscribe here..." />
@@ -71,8 +71,10 @@ const FooterStyled = styled.footer`
   position: relative;
   z-index: 10;
   padding: 5rem 5rem 0 5rem;
-  background-color: var(--color-bg);
-  border-top: 1px solid var(--color-border);
+  background: url("BackPolygons.png"),
+    linear-gradient(to top, var(--color-bg), #fc6627);
+  /* Agregamos la imagen de fondo aquí */
+  background-size: cover; /* Para asegurarnos de que la imagen cubra todo el fondo */
 
   nav {
     display: flex;
